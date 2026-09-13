@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://everia-gmbh.de/sitemap.xml
