@@ -52,7 +52,7 @@
     .to(layers.solar, { opacity: 0, duration: .3 }, 3.7)
   // 3.6–4.6: Kamera taucht in die Zelle (starker Zoom + Dissolve auf Makro), warmes Licht
     .to(img('solar'), { scale: 2.6, duration: 1.0, ease: 'power2.in' }, 3.6)
-    .to(shots.zelle, { opacity: 1, duration: .5 }, 3.9)
+    .to(shots.zelle, { opacity: 1, duration: .2 }, 3.95)
     .fromTo(img('zelle'), { scale: 1.0 }, { scale: 2.2, duration: 1.3, ease: 'power2.in' }, 3.9)
     .fromTo(layers.zelle, { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: .3 }, 4.1)
     .fromTo(W.zelle, { yPercent: 110 }, { yPercent: 0, stagger: .02, duration: .1 }, 4.1)
