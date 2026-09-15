@@ -57,11 +57,9 @@
     .fromTo(layers.zelle, { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: .3 }, 4.1)
     .fromTo(W.zelle, { yPercent: 110 }, { yPercent: 0, stagger: .02, duration: .1 }, 4.1)
     .to(layers.zelle, { opacity: 0, duration: .25 }, 4.75)
-    .to(flash, { opacity: .85, duration: .25 }, 4.9)
   // 4.9–6: Aufblende ins Quartier bei Sonnenuntergang, sanfter Pull-back
-    .to(shots.quartier, { clipPath: 'circle(120% at 50% 50%)', duration: .01 }, 4.9)
-    .to(flash, { opacity: 0, duration: .5 }, 5.15)
-    .to(shots.zelle, { opacity: 0, duration: .01 }, 5.2)
+    .to(shots.quartier, { clipPath: 'circle(120% at 50% 50%)', duration: .6, ease: 'power2.inOut' }, 4.9)
+    .to(shots.zelle, { opacity: 0, duration: .01 }, 5.5)
     .fromTo(img('quartier'), { scale: 1.45, yPercent: 8 }, { scale: 1.0, yPercent: 0, duration: 1.4 }, 4.9)
     .fromTo(layers.city, { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: .4 }, 5.5)
     .fromTo(W.city, { yPercent: 110 }, { yPercent: 0, stagger: .02, duration: .12 }, 5.5);
